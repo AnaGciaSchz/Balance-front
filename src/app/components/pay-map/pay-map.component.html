@@ -1,0 +1,7 @@
+<section>
+<h2>Pay Map</h2>
+<button (click)="refreshPayMap()" class="refresh-button">Refresh Pay Map</button>
+<p *ngFor="let value of values; let last = last">
+    {{ value }}{{ !last ? ', ' : '' }}
+</p>
+</section>

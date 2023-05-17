@@ -1,0 +1,37 @@
+  main section {
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "title title"
+    "expenses friends"
+    "expenses friends"
+    "paymap paymap";
+  }
+  
+
+  h1 {
+    grid-area: title;
+  }
+
+  .expenses {
+    grid-area: expenses;
+    display: flex;
+    flex-direction: column;
+    padding-right: 1em;
+    border-right: 3px solid lightgray;
+  }
+
+  .friends {
+    grid-area: friends;
+    padding-left: 2em;
+  }
+
+  .paymap {
+    grid-area: paymap;
+  }
+  .separator {
+    grid-area: separator;
+  }
+
+  
+

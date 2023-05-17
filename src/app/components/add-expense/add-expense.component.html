@@ -1,0 +1,18 @@
+<section>
+<h2>Add Expense</h2>
+<div class="add-expense-friend-data">
+<label for="friend">Friend: </label>
+<input placeholder="Write Friend Id (Ex: 1)" class="friend" [(ngModel)]="expense.friend">
+</div>
+<div class="add-expense-amount-data">
+<label for="amount">Amount: </label>
+<input placeholder="0.00" min="0" class="amount" [(ngModel)]="expense.amount"> €
+</div>
+<div class="add-expense-description-data">
+<label for="description">Description: </label>
+<span><input placeholder="Write Description (Ex: Dinner)" class="description" [(ngModel)]="expense.description"></span>
+</div>
+<div class="button">
+    <button (click)="saveExpense()" class="save-button">Save Expense</button>
+</div>
+</section>

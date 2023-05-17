@@ -1,0 +1,31 @@
+section {
+max-height: 12em;
+display: grid;
+grid-template:       
+"title title"      
+"friend amount"             
+"description description"
+"button button";
+}
+h2 {
+    grid-area: title
+}
+.add-expense-friend-data{
+grid-area: friend;
+}
+.add-expense-amount-data{
+    grid-area: amount;
+
+}
+.add-expense-description-data{
+    grid-area: description;
+}
+
+.add-expense-description-data input{
+    margin-top: 1em;
+    width: 62%;
+}
+.button {
+    grid-area: button;
+    margin-left: 80%;
+}

@@ -1,0 +1,17 @@
+<button (click)="refreshFriends()" class="refresh-button">Refresh Friends</button>
+<table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Balance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let friend of friends" >
+        <td>{{ friend.id }}</td>
+        <td>{{ friend.name }}</td>
+        <td [ngClass]="friend.balanceDebt < 0 ? 'red' : 'green'">{{ friend.balanceDebt | number}}€</td>
+      </tr>
+    </tbody>
+  </table>

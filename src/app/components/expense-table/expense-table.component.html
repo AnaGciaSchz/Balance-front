@@ -1,0 +1,19 @@
+<button (click)="refreshExpenses()" class="refresh-button">Refresh Expenses</button>
+<table id="expense-table">
+    <thead>
+      <tr>
+        <th>Friend</th>
+        <th>Description</th>
+        <th>Amount</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let expense of expenses">
+        <td>{{ expense.friend }}</td>
+        <td>{{ expense.description }}</td>
+        <td>{{ expense.amount }}€</td>
+        <td>{{ expense.timestamp | date: 'short'}}</td>
+      </tr>
+    </tbody>
+  </table>
